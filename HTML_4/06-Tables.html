@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Tables</h1>
+
+    <table width='100%' border="2" cellpadding=10 cellspacing=10>
+        <tr>
+            <th>Column_1</th>
+            <th>Column_2</th>
+            <th>Column_3</th>
+            <th>Column_4</th>
+            <th>Column_5</th>
+        </tr>
+        <!-- tr*5>td*5{Column_$} -->
+        <tr>
+            <td>Column_1</td>
+            <td colspan="3">Column_2</td>
+            <td>Column_3</td>
+            <!-- <td>Column_4</td>
+            <td>Column_5</td> -->
+        </tr>
+        <tr>
+            <td>Column_1</td>
+            <td>Column_2</td>
+            <td>Column_3</td>
+            <td>Column_4</td>
+            <td>Column_5</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Column_1</td>
+            <td>Column_2</td>
+            <td>Column_3</td>
+            <td>Column_4</td>
+            <td>Column_5</td>
+        </tr>
+        <tr>
+            <td>Column_1</td>
+            <td>Column_2</td>
+            <td>Column_3</td>
+            <td>Column_4</td>
+            <!-- <td>Column_5</td> -->
+        </tr>
+        <tr>
+            <td>Column_1</td>
+            <td>Column_2</td>
+            <td>Column_3</td>
+            <td>Column_4</td>
+            <!-- <td>Column_5</td> -->
+        </tr>
+    </table>
+
+</body>
+
+</html>
