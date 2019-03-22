@@ -1,0 +1,34 @@
+body {
+    background-image: url("https://statics.sportskeeda.com/wp-content/uploads/2013/11/wc2-2013208.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+div {
+    height: 600px;
+    background-size: 100% 100%;
+    margin-bottom: 500px;
+    background-attachment: fixed;
+}
+
+#div_1 {
+    background-image: url("https://i.ndtvimg.com/i/2017-02/sachin-tendulkar-century-afp_806x605_51487917458.jpg");
+}
+
+#div_2 {
+    background-image: url("https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/11/03/103135046-GettyImages-110022758.jpg?v=1446585058");
+}
+
+#div_3 {
+    background-image: url("http://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201805/231355673.jpg");
+}
+
+#div_4 {
+    background-image: url("https://m.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/12/23/Pictures/sachin-tendulkar_043f2426-e7e2-11e7-bb33-29502a427e3f.jpg");
+}
+
+#div_5 {
+    background-image: url("https://images.spot.im/v1/production/lno1e96nooupvdwh6vnn");
+}
