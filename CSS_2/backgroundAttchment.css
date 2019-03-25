@@ -10,7 +10,7 @@ div {
     height: 600px;
     background-size: 100% 100%;
     margin-bottom: 500px;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 #div_1 {
