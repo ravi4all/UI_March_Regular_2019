@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .col {
+            height: 400px;
+            width: 300px;
+            border: 10px solid red;
+            margin: 0 auto;
+            /* overflow: hidden; */
+            transition: 2s;
+            perspective: 500px;
+        }
+        
+        img {
+            width: 100%;
+            height: 400px;
+            transition: 2s;
+            transform-origin: left;
+        }
+        
+        .col:hover img {
+            transform: rotateY(-180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Transform Rotate</h1>
+
+    <div class="col">
+        <img src="https://img.etimg.com/thumb/height-480,width-640,imgsize-458259,msid-68846555/ms-dhoni-was-seen-angrily-gesturing-at-the-umpire-.jpg" alt="">
+    </div>
+
+</body>
+
+</html>

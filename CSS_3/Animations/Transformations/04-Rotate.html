@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .col {
+            display: inline-block;
+            height: 300px;
+            width: 300px;
+            border: 10px solid red;
+            margin: 0 20px;
+            overflow: hidden;
+            transition: 2s;
+        }
+        
+        img {
+            width: 100%;
+            height: inherit;
+            transition: 2s;
+        }
+        
+        .col:hover img {
+            /* transform: Scale(2, 2); */
+            /* transform: rotateX(180deg); */
+            /* transform: rotateY(180deg); */
+            /* transform: rotateZ(3600deg); */
+            transform: rotateY(360deg) scale(2, 2);
+        }
+        
+        .col:hover {
+            box-shadow: 10px 10px 20px 0px #000;
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Transform Rotate</h1>
+
+    <div id="parent">
+        <div class="col">
+            <div>
+                <img src="https://img.etimg.com/thumb/height-480,width-640,imgsize-458259,msid-68846555/ms-dhoni-was-seen-angrily-gesturing-at-the-umpire-.jpg" alt="">
+            </div>
+        </div>
+        <div class="col">
+            <div>
+                <img src="https://img.etimg.com/thumb/height-480,width-640,imgsize-458259,msid-68846555/ms-dhoni-was-seen-angrily-gesturing-at-the-umpire-.jpg" alt="">
+            </div>
+        </div>
+        <div class="col">
+            <div>
+                <img src="https://img.etimg.com/thumb/height-480,width-640,imgsize-458259,msid-68846555/ms-dhoni-was-seen-angrily-gesturing-at-the-umpire-.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
