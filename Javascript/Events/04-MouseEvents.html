@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            /* border: 10px solid red; */
+        }
+        
+        #div_1 {
+            height: 500px;
+            background-image: url("../../images/WebImages/Terminator002.jpg");
+        }
+        
+        .row {
+            display: flex;
+            overflow: hidden;
+        }
+        
+        #section {
+            margin-top: 100px;
+            text-align: center;
+        }
+        
+        .col {
+            margin: 0px 40px;
+        }
+        
+        img {
+            width: 100%;
+            transition: 1s;
+            max-height: 400px;
+        }
+        
+        .col-1 img {
+            transform: translateX(-150%);
+        }
+        
+        .col-2 img {
+            transform: translateX(150%);
+        }
+        
+        #section.animate img {
+            transform: translateX(0%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mouse Events</h1>
+
+    <!-- <div onmouseover="changeImg(this)" onmouseout="changeImg2(this)">
+        <img src="../../images/hulk5-18463.gif" alt="">
+    </div> -->
+
+    <div id="div_1" onmousemove="animateImg(this)"></div>
+
+    <section id="section">
+        <div class="row">
+            <div class="col col-1">
+                <img src="../../images/dhoni.jpg" alt="">
+            </div>
+            <div class="col col-2">
+                <img src="../../images/bahubali.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            var scrollY = window.scrollY;
+            console.log(scrollY);
+            if (scrollY > 450) {
+                document.querySelector("#section").className = 'animate';
+            } else {
+                document.querySelector("#section").className = '';
+            }
+        });
+
+        function changeImg(obj) {
+            obj.innerHTML = '<img src="../../images/hulksmash2.gif" alt="">';
+        }
+
+        function changeImg2(obj) {
+            obj.innerHTML = '<img src="../../images/hulk5-18463.gif" alt="">';
+        }
+
+        function animateImg(obj) {
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+            // console.log(mouseX, mouseY);
+            obj.style.backgroundPositionX = mouseX * 0.2 + 'px';
+            obj.style.backgroundPositionY = mouseY * 0.2 + 'px';
+        }
+    </script>
+</body>
+
+</html>
