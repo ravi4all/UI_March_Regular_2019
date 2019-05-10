@@ -1,0 +1,57 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.musicPlayer {
+    margin: 20px 0px;
+}
+
+#songsList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    border-right: 1px solid gray;
+}
+
+#songsList li {
+    margin: 0px 10px 20px;
+    width: 22%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#songsList li img {
+    width: 100%;
+    height: 200px;
+}
+
+#song_thumb {
+    width: 100%;
+    height: 80px;
+}
+
+#playList {
+    margin: 0px;
+    padding: 0px;
+}
+
+#playList li {
+    list-style: none;
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: #eeeeee;
+    position: relative;
+    cursor: pointer;
+    /* display: flex; */
+}
+
+#playList li .btn {
+    position: absolute;
+    right: 20px;
+}
+
+#playList img {
+    width: 10%;
+    height: 40px;
+}
